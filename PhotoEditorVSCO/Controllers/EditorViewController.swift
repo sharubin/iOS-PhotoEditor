@@ -7,33 +7,27 @@
 
 import Foundation
 import UIKit
+import Then
 
 class EditorViewController: UIViewController {
     
     public var picture: UIImage?
     var imageView = UIImageView()
-    var stackView = UIStackView()
     var filterView = UIView()
+    let stackView = UIStackView()
     
-    var btn1 = UIButton()
-    var btn2 = UIButton()
-    var btn3 = UIButton()
-    var btn4 = UIButton()
-    var btn5 = UIButton()
-    
+    let btn1 = UIButton()
+    let btn2 = UIButton()
+    let btn3 = UIButton()
+    let btn4 = UIButton()
+    let btn5 = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         imageView.image = self.picture
         filterView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
         configure()
-        btn1.addTarget(self, action: #selector(action1), for: .touchUpInside)
-        btn2.addTarget(self, action: #selector(action2), for: .touchUpInside)
-        btn3.addTarget(self, action: #selector(action3), for: .touchUpInside)
-        btn4.addTarget(self, action: #selector(action4), for: .touchUpInside)
-        btn5.addTarget(self, action: #selector(action5), for: .touchUpInside)
     }
     
     @objc func action1() {
@@ -55,58 +49,79 @@ class EditorViewController: UIViewController {
     @objc func action5() {
         filterView.backgroundColor = UIColor.Filter.purple
     }
-    
-    
 }
 
 extension EditorViewController {
     private func configure() {
         
-        view.addSubview(imageView)
-        imageView.contentMode = .scaleToFill
-        imageView.snp.makeConstraints({ maker in
-            maker.right.left.equalToSuperview().inset(20)
-            maker.top.equalToSuperview().inset(120)
-            maker.height.equalTo(350)
-        })
+        imageView.then {
+            view.addSubview($0)
+            $0.contentMode = .scaleToFill
+            $0.snp.makeConstraints({ maker in
+                maker.right.left.equalToSuperview().inset(20)
+                maker.top.equalToSuperview().inset(120)
+                maker.height.equalTo(350)
+            })
+        }
+                
+        filterView.then {
+            view.addSubview($0)
+            $0.snp.makeConstraints({ maker in
+                maker.right.left.equalToSuperview().inset(20)
+                maker.top.equalToSuperview().inset(120)
+                maker.height.equalTo(350)
+            })
+        }
         
-        view.addSubview(filterView)
-        filterView.snp.makeConstraints({ maker in
-            maker.right.left.equalToSuperview().inset(20)
-            maker.top.equalToSuperview().inset(120)
-            maker.height.equalTo(350)
-        })
+        btn1.then {
+            $0.backgroundColor = .red
+            $0.setTitle("PE2", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.addTarget(self, action: #selector(action1), for: .touchUpInside)
+        }
         
+        btn2.then {
+            $0.backgroundColor = .red
+            $0.setTitle("DH8", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.addTarget(self, action: #selector(action2), for: .touchUpInside)
+        }
         
-        view.addSubview(stackView)
+        btn3.then {
+            $0.backgroundColor = .red
+            $0.setTitle("DH7", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.addTarget(self, action: #selector(action3), for: .touchUpInside)
+        }
         
-        btn1.backgroundColor = .red
-        btn1.setTitle("PE2", for: .normal)
-        btn1.setTitleColor(.white, for: .normal)
-        btn2.backgroundColor = .red
-        btn2.setTitle("DH8", for: .normal)
-        btn2.setTitleColor(.white, for: .normal)
-        btn3.backgroundColor = .red
-        btn3.setTitle("DH7", for: .normal)
-        btn3.setTitleColor(.white, for: .normal)
-        btn4.backgroundColor = .red
-        btn4.setTitle("NE9", for: .normal)
-        btn4.setTitleColor(.white, for: .normal)
-        btn5.backgroundColor = .red
-        btn5.setTitle("KE2", for: .normal)
-        btn5.setTitleColor(.white, for: .normal)
+        btn4.then {
+            $0.backgroundColor = .red
+            $0.setTitle("NE9", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.addTarget(self, action: #selector(action4), for: .touchUpInside)
+        }
         
-        stackView.addArrangedSubview(btn1)
-        stackView.addArrangedSubview(btn2)
-        stackView.addArrangedSubview(btn3)
-        stackView.addArrangedSubview(btn4)
-        stackView.addArrangedSubview(btn5)
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.spacing = 5
-        stackView.snp.makeConstraints { maker in
-            maker.left.right.bottom.equalToSuperview().inset(15)
-            maker.height.equalTo(100)
+        btn5.then {
+            $0.backgroundColor = .red
+            $0.setTitle("KE2", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.addTarget(self, action: #selector(action5), for: .touchUpInside)
+        }
+    
+        stackView.then {
+            view.addSubview($0)
+            $0.addArrangedSubview(btn1)
+            $0.addArrangedSubview(btn2)
+            $0.addArrangedSubview(btn3)
+            $0.addArrangedSubview(btn4)
+            $0.addArrangedSubview(btn5)
+            $0.axis = .horizontal
+            $0.distribution = .fillEqually
+            $0.spacing = 5
+            $0.snp.makeConstraints { maker in
+                maker.left.right.bottom.equalToSuperview().inset(15)
+                maker.height.equalTo(100)
+            }
         }
     }
 }
