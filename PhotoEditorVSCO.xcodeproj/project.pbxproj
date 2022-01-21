@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB90C4A57C20AEC97A9194E2 /* Pods_PhotoEditorVSCO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4FCA80E5B41F6A970E60E5 /* Pods_PhotoEditorVSCO.framework */; };
 		EBCDDF4D2799AEC7004E3BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF4C2799AEC7004E3BE3 /* AppDelegate.swift */; };
-		EBCDDF4F2799AEC7004E3BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF4E2799AEC7004E3BE3 /* SceneDelegate.swift */; };
 		EBCDDF512799AEC7004E3BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF502799AEC7004E3BE3 /* ViewController.swift */; };
-		EBCDDF542799AEC7004E3BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCDDF522799AEC7004E3BE3 /* Main.storyboard */; };
 		EBCDDF562799AECC004E3BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCDDF552799AECC004E3BE3 /* Assets.xcassets */; };
 		EBCDDF592799AECC004E3BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCDDF572799AECC004E3BE3 /* LaunchScreen.storyboard */; };
+		EBCDDF612799AF73004E3BE3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF602799AF73004E3BE3 /* ImagePicker.swift */; };
+		EBCDDF642799C7C0004E3BE3 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF632799C7C0004E3BE3 /* EditorViewController.swift */; };
+		EBCDDF66279AB4A5004E3BE3 /* ExtraUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCDDF65279AB4A5004E3BE3 /* ExtraUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4FCA80E5B41F6A970E60E5 /* Pods_PhotoEditorVSCO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEditorVSCO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5323E9B1C6F667478255519 /* Pods-PhotoEditorVSCO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditorVSCO.release.xcconfig"; path = "Target Support Files/Pods-PhotoEditorVSCO/Pods-PhotoEditorVSCO.release.xcconfig"; sourceTree = "<group>"; };
 		EBCDDF492799AEC7004E3BE3 /* PhotoEditorVSCO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditorVSCO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCDDF4C2799AEC7004E3BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBCDDF4E2799AEC7004E3BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EBCDDF502799AEC7004E3BE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBCDDF532799AEC7004E3BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBCDDF552799AECC004E3BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBCDDF582799AECC004E3BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBCDDF5A2799AECC004E3BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCDDF602799AF73004E3BE3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EBCDDF632799C7C0004E3BE3 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		EBCDDF65279AB4A5004E3BE3 /* ExtraUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraUIColor.swift; sourceTree = "<group>"; };
+		F685720A9019AF2EA2A4FDAA /* Pods-PhotoEditorVSCO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditorVSCO.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEditorVSCO/Pods-PhotoEditorVSCO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB90C4A57C20AEC97A9194E2 /* Pods_PhotoEditorVSCO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C454CC43A8266F82C0B89E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F685720A9019AF2EA2A4FDAA /* Pods-PhotoEditorVSCO.debug.xcconfig */,
+				E5323E9B1C6F667478255519 /* Pods-PhotoEditorVSCO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A28AF6B6FE728A861E61DB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FCA80E5B41F6A970E60E5 /* Pods_PhotoEditorVSCO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBCDDF402799AEC7004E3BE3 = {
 			isa = PBXGroup;
 			children = (
 				EBCDDF4B2799AEC7004E3BE3 /* PhotoEditorVSCO */,
 				EBCDDF4A2799AEC7004E3BE3 /* Products */,
+				1C454CC43A8266F82C0B89E8 /* Pods */,
+				6A28AF6B6FE728A861E61DB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,24 @@
 		EBCDDF4B2799AEC7004E3BE3 /* PhotoEditorVSCO */ = {
 			isa = PBXGroup;
 			children = (
+				EBCDDF67279AB4AF004E3BE3 /* Controllers */,
 				EBCDDF4C2799AEC7004E3BE3 /* AppDelegate.swift */,
-				EBCDDF4E2799AEC7004E3BE3 /* SceneDelegate.swift */,
-				EBCDDF502799AEC7004E3BE3 /* ViewController.swift */,
-				EBCDDF522799AEC7004E3BE3 /* Main.storyboard */,
+				EBCDDF602799AF73004E3BE3 /* ImagePicker.swift */,
+				EBCDDF65279AB4A5004E3BE3 /* ExtraUIColor.swift */,
 				EBCDDF552799AECC004E3BE3 /* Assets.xcassets */,
 				EBCDDF572799AECC004E3BE3 /* LaunchScreen.storyboard */,
 				EBCDDF5A2799AECC004E3BE3 /* Info.plist */,
 			);
 			path = PhotoEditorVSCO;
+			sourceTree = "<group>";
+		};
+		EBCDDF67279AB4AF004E3BE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBCDDF502799AEC7004E3BE3 /* ViewController.swift */,
+				EBCDDF632799C7C0004E3BE3 /* EditorViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCDDF5D2799AECC004E3BE3 /* Build configuration list for PBXNativeTarget "PhotoEditorVSCO" */;
 			buildPhases = (
+				DD4AC44C349A9342E1AACCBB /* [CP] Check Pods Manifest.lock */,
 				EBCDDF452799AEC7004E3BE3 /* Sources */,
 				EBCDDF462799AEC7004E3BE3 /* Frameworks */,
 				EBCDDF472799AEC7004E3BE3 /* Resources */,
+				02D6FA5629B76F703FFCDAF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +164,52 @@
 			files = (
 				EBCDDF592799AECC004E3BE3 /* LaunchScreen.storyboard in Resources */,
 				EBCDDF562799AECC004E3BE3 /* Assets.xcassets in Resources */,
-				EBCDDF542799AEC7004E3BE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D6FA5629B76F703FFCDAF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEditorVSCO/Pods-PhotoEditorVSCO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEditorVSCO/Pods-PhotoEditorVSCO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoEditorVSCO/Pods-PhotoEditorVSCO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4AC44C349A9342E1AACCBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEditorVSCO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBCDDF452799AEC7004E3BE3 /* Sources */ = {
@@ -139,22 +217,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCDDF512799AEC7004E3BE3 /* ViewController.swift in Sources */,
+				EBCDDF66279AB4A5004E3BE3 /* ExtraUIColor.swift in Sources */,
+				EBCDDF612799AF73004E3BE3 /* ImagePicker.swift in Sources */,
 				EBCDDF4D2799AEC7004E3BE3 /* AppDelegate.swift in Sources */,
-				EBCDDF4F2799AEC7004E3BE3 /* SceneDelegate.swift in Sources */,
+				EBCDDF642799C7C0004E3BE3 /* EditorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBCDDF522799AEC7004E3BE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBCDDF532799AEC7004E3BE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBCDDF572799AECC004E3BE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +356,7 @@
 		};
 		EBCDDF5E2799AECC004E3BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F685720A9019AF2EA2A4FDAA /* Pods-PhotoEditorVSCO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +365,10 @@
 				DEVELOPMENT_TEAM = QK5DGD2ADV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditorVSCO/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Хотим делать фото";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Хотим загружать фото";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +386,7 @@
 		};
 		EBCDDF5F2799AECC004E3BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5323E9B1C6F667478255519 /* Pods-PhotoEditorVSCO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +395,10 @@
 				DEVELOPMENT_TEAM = QK5DGD2ADV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditorVSCO/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Хотим делать фото";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Хотим загружать фото";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

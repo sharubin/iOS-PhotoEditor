@@ -1,0 +1,6 @@
+framework module Pods_PhotoEditorVSCO {
+  umbrella header "Pods-PhotoEditorVSCO-umbrella.h"
+
+  export *
+  module * { export * }
+}
